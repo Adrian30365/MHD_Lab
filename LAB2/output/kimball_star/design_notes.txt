@@ -1,0 +1,46 @@
+
+LAB2 dodatkowe - uzasadnienie decyzji projektowych
+
+1. Model logiczny
+
+Zaprojektowano prosty model gwiazdy:
+- tabela faktów: fact_sales
+- wymiary: dim_customer, dim_product, dim_date, dim_country
+
+Ziarnistość danych:
+Jeden rekord w tabeli fact_sales odpowiada jednej pozycji faktury,
+czyli jednej linii sprzedażowej z pliku Online_Retail.csv.
+
+2. Przygotowanie danych
+
+Obsługa brakujących danych:
+- brakujący opis produktu zastąpiono wartością "Unknown product",
+- brakujący kraj zastąpiono wartością "Unknown country",
+- brakujący CustomerID otrzymał techniczny klucz typu UNKNOWN_kraj.
+
+Obsługa zwrotów:
+- Quantity < 0 oznacza zwrot,
+- utworzono flagę is_return,
+- SalesAmount = Quantity * UnitPrice,
+- zwroty zmniejszają sprzedaż netto,
+- dodatkowo zapisano GrossSalesAmount i ReturnAmount.
+
+3. Pytania biznesowe
+
+Przygotowano:
+- sprzedaż wg krajów: sales_by_country.csv,
+- trend sprzedaży w czasie: sales_trend_monthly.csv,
+- wykres trendu: sales_trend_monthly.png.
+
+4. Pytanie kontrolne
+
+To zadanie jest realizowane w podejściu Kimbala.
+
+Uzasadnienie:
+Zaczynamy od pytania analitycznego i procesu biznesowego sprzedaży,
+a następnie projektujemy tabelę faktów oraz wymiary. Powstaje model
+gwiazdy, który jest wygodny do analiz OLAP.
+
+W podejściu Inmona najpierw projektowalibyśmy centralną, znormalizowaną
+hurtownię danych w 3NF, a dopiero później wyprowadzali struktury
+analityczne lub data marty.

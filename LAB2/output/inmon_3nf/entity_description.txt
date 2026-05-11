@@ -1,0 +1,29 @@
+
+LAB2 - Identyfikacja encji biznesowych
+
+1. Country
+   Klucz główny: country_id
+   Atrybuty: country_name
+
+2. Customer
+   Klucz główny: customer_key
+   Klucz biznesowy: CustomerBusinessKey / CustomerID
+   Atrybuty: customer_id_source, country_id
+
+3. Product
+   Klucz główny: product_key
+   Klucz biznesowy: StockCode
+   Atrybuty: description
+
+4. Invoice
+   Klucz główny: invoice_no
+   Atrybuty: invoice_date, customer_key, country_id, is_cancelled
+
+5. InvoiceLine
+   Klucz główny: invoice_line_id
+   Klucze obce: invoice_no, product_key
+   Atrybuty: quantity, unit_price, is_return
+
+Komentarz:
+Dane źródłowe są w jednym dużym pliku CSV. W modelu 3NF rozdzielamy je
+na encje, aby ograniczyć redundancję i zachować relacje przez klucze.

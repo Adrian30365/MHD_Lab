@@ -1,0 +1,17 @@
+
+LAB2 - Refleksja
+
+Dlaczego model 3NF nie jest wygodny do analiz OLAP?
+
+Model 3NF dobrze ogranicza redundancję i nadaje się do integracji danych,
+ale nie jest wygodny do szybkich analiz OLAP, ponieważ dane są rozbite na
+wiele tabel. Aby policzyć np. sprzedaż według kraju, produktu i miesiąca,
+trzeba łączyć kilka tabel: invoice_line, invoice, customer, country oraz product.
+
+Co wymagałoby wielu JOIN-ów?
+
+Przykład: analiza sprzedaży według kraju i produktu wymaga połączenia:
+invoice_line -> invoice -> country oraz invoice_line -> product.
+Analiza sprzedaży według klienta, kraju i produktu wymagałaby jeszcze
+dołączenia tabeli customer. Dlatego w analizach częściej stosuje się model
+gwiazdy Kimbala, gdzie tabela faktów jest bezpośrednio połączona z wymiarami.
