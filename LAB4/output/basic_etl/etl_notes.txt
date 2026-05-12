@@ -1,0 +1,14 @@
+LAB4 - ETL podstawowy - decyzje projektowe
+
+Extract:
+Wczytano plik Online_Retail.csv do Pandas z kodowaniem ISO-8859-1.
+
+Transform:
+Usunięto rekordy bez CustomerID, anulowane transakcje, rekordy z Quantity <= 0,
+rekordy z UnitPrice < 0, brakujące daty oraz duplikaty.
+Ujednolicono typy danych i rozbito InvoiceDate na Year, Month, Day.
+
+Load:
+Wynikiem jest tabela fact_sales.csv. Jeden rekord odpowiada jednej pozycji faktury.
+Dodano miarę Revenue = Quantity * UnitPrice, ponieważ ułatwia analizę wartości sprzedaży
+i przychodu bez ponownego liczenia tej wartości w raportach.

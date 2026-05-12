@@ -1,0 +1,2 @@
+rows_before,missing_customer_id,cancelled_invoice_no_starts_with_C,quantity_less_or_equal_zero,unit_price_less_than_zero,missing_invoice_date,duplicates_before_cleaning,rows_after,rows_removed
+541909,135080,9288,10624,2,0,5268,392732,149177

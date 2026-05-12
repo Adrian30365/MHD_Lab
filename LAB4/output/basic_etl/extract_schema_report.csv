@@ -1,0 +1,9 @@
+column,dtype,missing_values,missing_percent
+InvoiceNo,str,0,0.0
+StockCode,str,0,0.0
+Description,str,1454,0.27
+Quantity,int64,0,0.0
+InvoiceDate,str,0,0.0
+UnitPrice,float64,0,0.0
+CustomerID,float64,135080,24.93
+Country,str,0,0.0

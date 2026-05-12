@@ -1,0 +1,26 @@
+LAB4 - Zadanie dodatkowe - integracja danych z wielu źródeł
+
+Cel:
+Połączyć Online_Retail.csv oraz Online_Retail_II.xlsx w jedną spójną tabelę faktów.
+
+Decyzje projektowe:
+1. Przyjęto schemat docelowy z kolumnami:
+   InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, Country.
+
+2. W Online Retail II nazwy kolumn mogą różnić się od Online_Retail.csv:
+   Invoice -> InvoiceNo,
+   Price -> UnitPrice,
+   Customer ID -> CustomerID.
+   Dlatego wykonano mapowanie nazw kolumn.
+
+3. Do połączenia użyto concat, a nie merge.
+   Uzasadnienie: zbiory reprezentują rekordy transakcyjne o podobnej strukturze,
+   więc należy je dopisać jeden pod drugim, a nie łączyć kolumnami.
+
+4. Duplikat rozpoznawany jest po kluczu biznesowym:
+   InvoiceNo + StockCode + Description + Quantity + InvoiceDate + UnitPrice + CustomerID + Country.
+
+5. Konflikt ceny wykrywany jest, gdy dla tego samego InvoiceNo, StockCode, CustomerID
+   oraz InvoiceDate występuje więcej niż jedna cena UnitPrice.
+
+6. Wynikiem końcowym jest fact_sales_integrated.csv.

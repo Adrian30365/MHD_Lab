@@ -1,0 +1,34 @@
+Profil danych: Online Retail CSV po normalizacji
+============================================================
+
+Liczba rekordów: 541909
+Liczba kolumn: 11
+
+Kolumny:
+InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, Country, SourceSystem, SourceSheet, SourceName
+
+Typy danych:
+InvoiceNo           str
+StockCode           str
+Description         str
+Quantity          int64
+InvoiceDate         str
+UnitPrice       float64
+CustomerID      float64
+Country             str
+SourceSystem        str
+SourceSheet         str
+SourceName          str
+
+Brakujące wartości:
+InvoiceNo            0
+StockCode            0
+Description       1454
+Quantity             0
+InvoiceDate          0
+UnitPrice            0
+CustomerID      135080
+Country              0
+SourceSystem         0
+SourceSheet          0
+SourceName           0

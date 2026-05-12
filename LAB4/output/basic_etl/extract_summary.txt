@@ -1,0 +1,27 @@
+LAB4 - ETL podstawowy - etap Extract
+==================================================
+
+Liczba rekordów: 541909
+Liczba kolumn: 8
+
+Pierwsze 5 rekordów:
+  InvoiceNo StockCode                          Description  Quantity   InvoiceDate  UnitPrice  CustomerID         Country
+0    536365    85123A   WHITE HANGING HEART T-LIGHT HOLDER         6  12/1/10 8:26       2.55     17850.0  United Kingdom
+1    536365     71053                  WHITE METAL LANTERN         6  12/1/10 8:26       3.39     17850.0  United Kingdom
+2    536365    84406B       CREAM CUPID HEARTS COAT HANGER         8  12/1/10 8:26       2.75     17850.0  United Kingdom
+3    536365    84029G  KNITTED UNION FLAG HOT WATER BOTTLE         6  12/1/10 8:26       3.39     17850.0  United Kingdom
+4    536365    84029E       RED WOOLLY HOTTIE WHITE HEART.         6  12/1/10 8:26       3.39     17850.0  United Kingdom
+
+Opis statystyczny:
+       InvoiceNo StockCode                         Description       Quantity     InvoiceDate      UnitPrice     CustomerID         Country
+count     541909    541909                              540455  541909.000000          541909  541909.000000  406829.000000          541909
+unique     25900      4070                                4223            NaN           23260            NaN            NaN              38
+top       573585    85123A  WHITE HANGING HEART T-LIGHT HOLDER            NaN  10/31/11 14:41            NaN            NaN  United Kingdom
+freq        1114      2313                                2369            NaN            1114            NaN            NaN          495478
+mean         NaN       NaN                                 NaN       9.552250             NaN       4.611114   15287.690570             NaN
+std          NaN       NaN                                 NaN     218.081158             NaN      96.759853    1713.600303             NaN
+min          NaN       NaN                                 NaN  -80995.000000             NaN  -11062.060000   12346.000000             NaN
+25%          NaN       NaN                                 NaN       1.000000             NaN       1.250000   13953.000000             NaN
+50%          NaN       NaN                                 NaN       3.000000             NaN       2.080000   15152.000000             NaN
+75%          NaN       NaN                                 NaN      10.000000             NaN       4.130000   16791.000000             NaN
+max          NaN       NaN                                 NaN   80995.000000             NaN   38970.000000   18287.000000             NaN

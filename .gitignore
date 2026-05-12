@@ -4,3 +4,9 @@ __pycache__/
 db.sqlite3
 .env
 static/
+# LAB4 - duże pliki wynikowe, generowane lokalnie
+LAB4/output/integrated_etl/duplicates_between_sources.csv
+LAB4/output/integrated_etl/fact_sales_integrated.csv
+# LAB4 - duze pliki wynikowe
+LAB4/output/integrated_etl/duplicates_between_sources.csv
+LAB4/output/integrated_etl/fact_sales_integrated.csv

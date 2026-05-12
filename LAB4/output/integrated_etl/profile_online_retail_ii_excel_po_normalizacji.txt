@@ -1,0 +1,34 @@
+Profil danych: Online Retail II Excel po normalizacji
+============================================================
+
+Liczba rekordów: 1067371
+Liczba kolumn: 11
+
+Kolumny:
+InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, Country, SourceSystem, SourceSheet, SourceName
+
+Typy danych:
+InvoiceNo               object
+StockCode               object
+Description             object
+Quantity                 int64
+InvoiceDate     datetime64[us]
+UnitPrice              float64
+CustomerID             float64
+Country                    str
+SourceSystem               str
+SourceSheet                str
+SourceName                 str
+
+Brakujące wartości:
+InvoiceNo            0
+StockCode            0
+Description       4382
+Quantity             0
+InvoiceDate          0
+UnitPrice            0
+CustomerID      243007
+Country              0
+SourceSystem         0
+SourceSheet          0
+SourceName           0
