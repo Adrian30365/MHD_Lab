@@ -1,0 +1,32 @@
+
+LAB6 - Wnioski z analizy danych
+
+1. Ktore kraje sa kluczowe?
+
+Najwazniejszym krajem pod wzgledem przychodu jest: United Kingdom.
+Przychod tego kraju wynosi: 14666669.08.
+W grupie kluczowych krajow znajduja sie kraje z segmentu "Top 25% - wysoki przychod".
+
+2. Czy sprzedaz jest rownomierna miedzy krajami?
+
+Sprzedaz nie jest rownomierna miedzy krajami.
+Kraje z segmentu Top 25% odpowiadaja za okolo 97.45% calkowitego przychodu.
+Oznacza to koncentracje sprzedazy w ograniczonej liczbie krajow.
+
+3. Czy widac sezonowosc?
+
+Najwyzsza sprzedaz odnotowano w miesiacu: 11.
+Wartosc sprzedazy w tym miesiacu wynosi: 2322665.63.
+Relacja najlepszego miesiaca do najslabszego miesiaca wynosi okolo 2.44, co wskazuje,
+ze sprzedaz zmienia sie w czasie i mozna analizowac ja sezonowo.
+
+4. Analiza klientow
+
+Sredni przychod na klienta wynosi: 3008.75.
+TOP 10 klientow ma duzo wieksze wartosci przychodu niz przecietny klient, dlatego analiza klientow
+moze byc przydatna do segmentacji i identyfikacji najbardziej wartosciowych odbiorcow.
+
+Podsumowanie:
+Analiza pokazuje, ze dane sprzedazowe mozna skutecznie analizowac przy uzyciu tabel pivot,
+rankingow i prostej segmentacji. Najwieksze znaczenie biznesowe maja kraje i klienci generujacy
+najwiekszy przychod, a wymiar czasu pozwala wykrywac zmiennosc sprzedazy miedzy miesiacami.

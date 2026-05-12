@@ -1,0 +1,8 @@
+Liczba rekordow przed czyszczeniem: 1067370
+Usunieto rekordy z brakami kluczowych danych: 243007
+Usunieto anulowane faktury: 18744
+Usunieto rekordy z Quantity <= 0: 0
+Usunieto rekordy z UnitPrice <= 0: 71
+Usunieto duplikaty: 11940
+Liczba rekordow po czyszczeniu: 793608
+Laczny przychod po czyszczeniu: 17685442.64
