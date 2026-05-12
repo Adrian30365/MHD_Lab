@@ -1,0 +1,23 @@
+LAB5 - TRANSFORM / DATA QUALITY REPORT
+Rekordy przed czyszczeniem: 1609280
+Duplikaty przed czyszczeniem: 17401
+Rekordy po konwersji typów: 1591879
+Rekordy po czyszczeniu: 1186301
+Usunięte rekordy: 422979
+
+Braki danych po czyszczeniu:
+InvoiceNo      0
+StockCode      0
+Description    0
+Quantity       0
+InvoiceDate    0
+UnitPrice      0
+CustomerID     0
+Country        0
+Source         0
+Year           0
+Month          0
+Day            0
+YearMonth      0
+TotalPrice     0
+dtype: int64

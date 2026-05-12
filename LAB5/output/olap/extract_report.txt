@@ -1,0 +1,16 @@
+LAB5 - EXTRACT REPORT
+Liczba rekordów po wczytaniu: 1609280
+Liczba kolumn po wczytaniu: 9
+Kolumny: InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, Country, Source
+
+Braki danych przed czyszczeniem:
+InvoiceNo           0
+StockCode           0
+Description      5836
+Quantity            0
+InvoiceDate         0
+UnitPrice           0
+CustomerID     378087
+Country             0
+Source              0
+dtype: int64

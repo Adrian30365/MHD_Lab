@@ -1,0 +1,24 @@
+LAB5 - mechanizmy OLAP i analiza danych
+
+Model OLAP:
+- Fakty / miary: TotalPrice oraz Quantity.
+- Wymiary: Country, Year, Month, StockCode.
+
+Wykonane operacje:
+1. Roll-up - agregacja sprzedaży do poziomu roku.
+2. Drill-down - zejście do poziomu roku i miesiąca.
+3. Slice - wybór jednego kraju: United Kingdom.
+4. Dice - wybór kraju United Kingdom oraz roku 2011.
+5. Pivot / kostka danych - Country x Year oraz Country x Month.
+
+Wyniki zadań:
+- Top 10 krajów zapisano w task1_top_10_countries.csv.
+- Miesiąc o największej sprzedaży zapisano w task2_best_sales_month.csv.
+- Kostkę kraj x miesiąc zapisano w task3_cube_country_month.csv.
+- Najlepszy rok dla każdego kraju zapisano w task4_best_year_by_country.csv.
+- Top 5 produktów w każdym kraju zapisano w task5_top_5_products_by_country.csv.
+- Heatmapę zapisano w bonus_heatmap_country_month.png.
+
+Założenia ETL:
+Usunięto brakujące CustomerID, anulowane faktury, Quantity <= 0, UnitPrice <= 0,
+błędne daty oraz duplikaty. Miara TotalPrice została policzona jako Quantity * UnitPrice.
