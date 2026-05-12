@@ -1,0 +1,37 @@
+LAB3 - Modelowanie danych w hurtowni
+
+1. Grain
+Wybrano grain na poziomie pojedynczej pozycji faktury. Jeden rekord w FactSales odpowiada jednej linii sprzedażowej z faktury, czyli sprzedaży konkretnego produktu w konkretnej fakturze. Taki poziom szczegółowości pozwala analizować sprzedaż według produktu, klienta, kraju oraz czasu, a w razie potrzeby agregować dane do poziomu faktury, dnia lub miesiąca.
+
+Przykład analizy: sprzedaż produktów według kraju i miesiąca.
+
+2. Model gwiazdy
+Tabela faktów: FactSales.
+Wymiary: DimCustomer, DimProduct, DimDate, DimCountry, DimInvoice.
+Minimalne wymagania spełniają DimCustomer, DimProduct i DimDate, a w ramach rozszerzenia dodano DimCountry oraz DimInvoice.
+
+3. Klucze
+Klucze naturalne:
+- CustomerID dla klienta,
+- StockCode dla produktu,
+- InvoiceNo dla faktury,
+- data z InvoiceDate dla czasu,
+- Country dla kraju.
+
+Klucze sztuczne:
+- customer_key,
+- product_key,
+- date_key,
+- country_key,
+- invoice_key.
+
+Tabela faktów używa wyłącznie kluczy sztucznych do połączenia z wymiarami.
+
+4. SCD2
+Dla DimCustomer zastosowano SCD typu 2. Zmianę wykrywa się na podstawie zmiany kraju klienta. Wymiar zawiera kolumny valid_from, valid_to oraz current_flag, dzięki czemu można zachować historię zmian.
+
+5. Kompromisy projektowe
+Model gwiazdy jest mniej znormalizowany niż 3NF, ale jest wygodniejszy dla analiz OLAP. Dane opisowe znajdują się w wymiarach, a miary w tabeli faktów. Dzięki temu analizy sprzedaży według czasu, produktu, klienta i kraju wymagają prostych połączeń tabeli faktów z wymiarami.
+
+6. Jak model wspiera analizy biznesowe
+Model umożliwia analizę przychodów, ilości sprzedanych sztuk i liczby linii sprzedaży według kraju, produktu, klienta i czasu. Dodatkowe pliki sales_by_country.csv i sales_trend_monthly.csv pokazują przykładowe odpowiedzi na pytania biznesowe.
