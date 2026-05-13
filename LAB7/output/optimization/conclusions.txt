@@ -1,0 +1,35 @@
+LAB7 - Wnioski
+
+1. Wpływ optymalizacji pamięci
+
+Przed optymalizacją DataFrame zajmował około 152.46 MB.
+Po optymalizacji DataFrame zajmował około 24.10 MB.
+Oznacza to zmniejszenie zużycia pamięci o około 128.36 MB,
+czyli o około 84.19%.
+
+Największy wpływ miała konwersja kolumn tekstowych, takich jak Country,
+StockCode, Description i InvoiceNo, do typu category. W danych sprzedażowych
+wiele wartości powtarza się, więc typ category pozwala przechowywać je
+bardziej oszczędnie.
+
+2. Które operacje przyspieszyły?
+
+Operacje, które w tym uruchomieniu były szybsze po optymalizacji:
+sum_sales_by_country, sum_sales_by_month, top10_customers_by_revenue, filter_united_kingdom.
+
+Operacje, które w tym uruchomieniu były wolniejsze po optymalizacji:
+filter_sales_over_1000.
+
+3. Jaki był wpływ optymalizacji typów danych?
+
+Optymalizacja typów danych zmniejszyła zużycie pamięci i może przyspieszyć
+część operacji grupowania, sortowania lub filtrowania. Mniejsze typy liczbowe
+oraz category ograniczają ilość danych, które Pandas musi przetwarzać w pamięci.
+
+4. Czy zmniejszenie pamięci zawsze oznacza wzrost wydajności?
+
+Nie zawsze. Zmniejszenie pamięci zwykle pomaga, ale nie gwarantuje
+przyspieszenia każdej operacji. Niektóre operacje na typie category albo na
+typach nullable mogą mieć dodatkowy koszt przetwarzania. Dlatego w ETL i BI
+nie wystarczy tylko zmienić typy danych - trzeba również mierzyć czas działania
+konkretnych operacji analitycznych.

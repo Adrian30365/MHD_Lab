@@ -1,0 +1,3 @@
+version,memory_mb,difference_vs_before_mb
+before_optimization,152.46155071258545,0.0
+after_optimization,24.102108001708984,-128.35944271087646

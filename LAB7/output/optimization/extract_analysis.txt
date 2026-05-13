@@ -1,0 +1,24 @@
+LAB7 - Etap 1: Wczytanie i analiza danych
+
+Czas wczytywania danych: 0.705789 s
+Liczba rekordów: 541909
+Liczba kolumn: 8
+Zużycie pamięci przed przygotowaniem: 172.0900 MB
+
+Kolumny:
+- InvoiceNo: str
+- StockCode: str
+- Description: str
+- Quantity: int64
+- InvoiceDate: str
+- UnitPrice: float64
+- CustomerID: float64
+- Country: str
+
+Pierwsze 5 rekordów:
+  InvoiceNo StockCode                          Description  Quantity   InvoiceDate  UnitPrice  CustomerID         Country
+0    536365    85123A   WHITE HANGING HEART T-LIGHT HOLDER         6  12/1/10 8:26       2.55     17850.0  United Kingdom
+1    536365     71053                  WHITE METAL LANTERN         6  12/1/10 8:26       3.39     17850.0  United Kingdom
+2    536365    84406B       CREAM CUPID HEARTS COAT HANGER         8  12/1/10 8:26       2.75     17850.0  United Kingdom
+3    536365    84029G  KNITTED UNION FLAG HOT WATER BOTTLE         6  12/1/10 8:26       3.39     17850.0  United Kingdom
+4    536365    84029E       RED WOOLLY HOTTIE WHITE HEART.         6  12/1/10 8:26       3.39     17850.0  United Kingdom

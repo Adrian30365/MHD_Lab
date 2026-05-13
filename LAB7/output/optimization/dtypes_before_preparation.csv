@@ -1,0 +1,9 @@
+column,dtype
+InvoiceNo,str
+StockCode,str
+Description,str
+Quantity,int64
+InvoiceDate,str
+UnitPrice,float64
+CustomerID,float64
+Country,str

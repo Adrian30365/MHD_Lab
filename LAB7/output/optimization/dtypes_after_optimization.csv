@@ -1,0 +1,12 @@
+column,dtype_after
+InvoiceNo,category
+StockCode,category
+Description,category
+Quantity,int32
+InvoiceDate,datetime64[us]
+UnitPrice,float64
+CustomerID,Int32
+Country,category
+Revenue,float64
+Month,int8
+Year,int16
