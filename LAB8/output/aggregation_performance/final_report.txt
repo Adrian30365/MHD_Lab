@@ -1,0 +1,19 @@
+LAB8 - raport koncowy
+
+Cel: porownanie metod agregacji danych hurtownianych w Pandas.
+
+Liczba rekordow po czyszczeniu: 805549
+Liczba rekordow w zbiorze powiekszonym: 4027745
+Mnoznik powiekszenia danych: 5
+
+Najbardziej wydajna metoda srednio dla zbioru podstawowego:
+set_index_groupby
+
+Najbardziej wydajna metoda srednio dla zbioru powiekszonego:
+groupby
+
+Wnioski:
+1. groupby() jest najczesciej najprostsza i bardzo wydajna metoda agregacji danych w Pandas.
+2. pivot_table() jest czytelna przy budowie tabel analitycznych, ale moze miec wiekszy narzut.
+3. set_index() bywa przydatny, gdy wielokrotnie analizujemy dane wedlug tej samej kolumny.
+4. Przy bardzo duzych hurtowniach danych problemem staje sie zuzycie pamieci i czas operacji.

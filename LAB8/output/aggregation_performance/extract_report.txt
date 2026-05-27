@@ -1,0 +1,27 @@
+LAB8 - Etap 1: wczytanie i analiza danych
+
+Plik zrodlowy: C:\Users\Naitap\Desktop\MHD_Lab\LAB8\data\Online_Retail_II.xlsx
+Czas wczytywania: 111.298226 s
+Liczba rekordow: 1067371
+Liczba kolumn: 8
+Zuzycie pamieci: 249.05 MB
+
+Typy danych:
+Invoice                object
+StockCode              object
+Description            object
+Quantity                int64
+InvoiceDate    datetime64[us]
+Price                 float64
+Customer ID           float64
+Country                   str
+
+Brakujace wartosci:
+Invoice             0
+StockCode           0
+Description      4382
+Quantity            0
+InvoiceDate         0
+Price               0
+Customer ID    243007
+Country             0

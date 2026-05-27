@@ -1,0 +1,7 @@
+dataset,method,time_seconds
+large,groupby,0.5510366666666565
+large,set_index_groupby,0.5665074999999433
+large,pivot_table,1.0362769333334352
+normal,set_index_groupby,0.11316539999991922
+normal,groupby,0.11435296666665333
+normal,pivot_table,0.29269929999986743
